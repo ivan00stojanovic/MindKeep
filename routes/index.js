@@ -4,7 +4,10 @@ const router = express.Router()
 //Description:  login/landing page
 //Route: GET 
 router.get('/', (req,res) => {
-    res.render('login')
+    res.render('login',{
+        layout: 'login',
+    })
+    
 })
 
 //Description:            Dashboard

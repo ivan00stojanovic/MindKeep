@@ -1,3 +1,4 @@
+const path = require('path')
 const express = require('express')
 const dotenv = require('dotenv')
 const connectDB = require('./config/db')
@@ -24,6 +25,9 @@ app.engine('.hbs', exphbs.engine({
     extname: '.hbs'
     })
     )
+
+// Static folder
+    app.use(express.static(path.join(__dirname, 'public')))
 
 app.set('view engine', '.hbs')
 
