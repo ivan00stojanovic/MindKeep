@@ -17,7 +17,7 @@ if(process.env.NODE_ENV === 'development'){
     app.use(morgan('dev'))
 }
 
-// HandleBars
+// HandleBars anothjer time
 // Add the word .engine after exphbs
 app.engine('.hbs', exphbs.engine({
     defaultLayout: 'main',
